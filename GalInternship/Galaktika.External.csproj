@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Galaktika.External.Module</RootNamespace>
+    <AssemblyName>Galaktika.External.Module</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'EasyTest|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\EasyTest\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;EASYTEST</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v16.2.Core, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dashboard.v16.2.Core, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Galaktika EAM v4.2_Dev\Bin\DevExpress\DevExpress.Dashboard.v16.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.CloneObject.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Images.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Kpi.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Objects.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.ReportsV2.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Security.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.StateMachine.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Win.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Xpo.v16.2">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v16.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v16.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Images.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v16.2.Core, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v16.2.Core, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Persistent.Base.v16.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v16.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v16.2.Core, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v16.2.Core, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v16.2.Core, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v16.2.Core, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v16.2.Core, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="PromAktiv.Common, Version=4.2.1.262, Culture=neutral, PublicKeyToken=b5573042f1727a10, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Galaktika EAM v4.2_Dev\Bin\PromAktiv.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PromAktiv.Core.Branches">
+      <HintPath>..\..\..\Galaktika EAM v4.2_Dev\Bin\PromAktiv.Core.Branches.dll</HintPath>
+    </Reference>
+    <Reference Include="PromAktiv.Core.CD.Module">
+      <HintPath>..\..\..\Galaktika EAM v4.2_Dev\Bin\PromAktiv.Core.CD.Module.dll</HintPath>
+    </Reference>
+    <Reference Include="PromAktiv.Core.Common">
+      <HintPath>..\..\..\Galaktika EAM v4.2_Dev\Bin\PromAktiv.Core.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PromAktiv.Core.Gantt.Module">
+      <HintPath>..\..\..\Galaktika EAM v4.2_Dev\Bin\PromAktiv.Core.Gantt.Module.dll</HintPath>
+    </Reference>
+    <Reference Include="PromAktiv.Core.Module">
+      <HintPath>..\CommonBin\PromAktiv.Core.Module.dll</HintPath>
+    </Reference>
+    <Reference Include="PromAktiv.Module">
+      <HintPath>..\..\..\Galaktika EAM v4.2_Dev\Bin\PromAktiv.Module.dll</HintPath>
+    </Reference>
+    <Reference Include="PromAktiv.Persistent">
+      <HintPath>..\CommonBin\PromAktiv.Persistent.dll</HintPath>
+    </Reference>
+    <Reference Include="PromAktiv.Utils, Version=4.2.1.262, Culture=neutral, PublicKeyToken=b5573042f1727a10, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Galaktika EAM v4.2_Dev\Bin\PromAktiv.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Xafari">
+      <HintPath>..\..\..\Galaktika EAM v4.2_Dev\Bin\Xafari\Xafari.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.Arms">
+      <HintPath>..\..\..\Galaktika EAM v4.2_Dev\Bin\Xafari\Xafari.Arms.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.BC">
+      <HintPath>..\..\..\Galaktika EAM v4.2_Dev\Bin\Xafari\Xafari.BC.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.BC.BusinessOperations">
+      <HintPath>..\..\..\Galaktika EAM v4.2_Dev\Bin\Xafari\Xafari.BC.BusinessOperations.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.BC.Numerators">
+      <HintPath>..\..\..\Galaktika EAM v4.2_Dev\Bin\Xafari\Xafari.BC.Numerators.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.BC.Numerators.DC, Version=16.2.6012.0, Culture=neutral, PublicKeyToken=b5573042f1727a10, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Galaktika EAM v4.2_Dev\Bin\Xafari\Xafari.BC.Numerators.DC.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.BC.Numerators.Xpo">
+      <HintPath>..\..\..\Galaktika EAM v4.2_Dev\Bin\Xafari\Xafari.BC.Numerators.Xpo.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.BC.Xas, Version=16.2.6012.0, Culture=neutral, PublicKeyToken=b5573042f1727a10, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Galaktika EAM v4.2_Dev\Bin\Xafari\Xafari.BC.Xas.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.Design.ModelEditor">
+      <HintPath>..\..\..\Galaktika EAM v4.2_Dev\Bin\Xafari\Xafari.Design.ModelEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.Docflow">
+      <HintPath>..\..\..\Galaktika EAM v4.2_Dev\Bin\Xafari\Xafari.Docflow.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.Editors, Version=16.2.6012.0, Culture=neutral, PublicKeyToken=b5573042f1727a10, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Galaktika EAM v4.2_Dev\Bin\Xafari\Xafari.Editors.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.Images, Version=16.2.6012.0, Culture=neutral, PublicKeyToken=b5573042f1727a10, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Galaktika EAM v4.2_Dev\Bin\Xafari\Xafari.Images.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.ManagedOperations, Version=16.2.6012.0, Culture=neutral, PublicKeyToken=b5573042f1727a10" />
+    <Reference Include="Xafari.Reports">
+      <HintPath>..\..\..\Galaktika EAM v4.2_Dev\Bin\Xafari\Xafari.Reports.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.Reports.Analysis">
+      <HintPath>..\..\..\Galaktika EAM v4.2_Dev\Bin\Xafari\Xafari.Reports.Analysis.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.Reports.Arm">
+      <HintPath>..\..\..\Galaktika EAM v4.2_Dev\Bin\Xafari\Xafari.Reports.Arm.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.Reports.Excel">
+      <HintPath>..\..\..\Galaktika EAM v4.2_Dev\Bin\Xafari\Xafari.Reports.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.Reports.File">
+      <HintPath>..\..\..\Galaktika EAM v4.2_Dev\Bin\Xafari\Xafari.Reports.File.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.Reports.Server">
+      <HintPath>..\..\..\Galaktika EAM v4.2_Dev\Bin\Xafari\Xafari.Reports.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.Reports.Xaf">
+      <HintPath>..\..\..\Galaktika EAM v4.2_Dev\Bin\Xafari\Xafari.Reports.Xaf.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.ReportsV2.Mvc.MVCx">
+      <HintPath>..\..\..\Galaktika EAM v4.2_Dev\Bin\Xafari\Xafari.ReportsV2.Mvc.MVCx.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.SmartDesign">
+      <HintPath>..\..\..\Galaktika EAM v4.2_Dev\Bin\Xafari\Xafari.SmartDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.Utils">
+      <HintPath>..\..\..\Galaktika EAM v4.2_Dev\Bin\Xafari\Xafari.Utils.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessObjects\ExternalDocument.cs" />
+    <Compile Include="BusinessObjects\ExternalDocumentKind.cs" />
+    <Compile Include="BusinessObjects\ExternalDocumentMaterial.cs" />
+    <Compile Include="BusinessObjects\ExternalDocumentStatus.cs" />
+    <Compile Include="BusinessObjects\ExternalDocumentOperation.cs" />
+    <Compile Include="BusinessOperations\AssetCreateServiceJournalItemOperationService .cs" />
+    <Compile Include="BusinessOperations\ExternalDocumentCompleteOperation.cs" />
+    <Compile Include="BusinessOperations\ExternalDocumentCompleteOperationService.cs" />
+    <Compile Include="Controllers\DerivePersistentBusinessObjectLogic.cs" />
+    <Compile Include="Converters\ChangeNameConverter.cs" />
+    <Compile Include="LogicControllers\ExternalDocumentLogicController.cs" />
+    <Compile Include="LogicControllers\LogicControllerRegistrator.cs" />
+    <Compile Include="Module.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Module.Designer.cs">
+      <DependentUpon>Module.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\ExtDocParametrs.cs" />
+    <Compile Include="Reports\ExtDocReportDataMiner.cs" />
+    <Compile Include="Reports\ExtDocReportDataSource.cs" />
+    <Compile Include="Reports\ExtDocReportFileGenerator.cs" />
+    <Compile Include="Reports\ExternalDocumentReport.cs" />
+    <Compile Include="UpdateBefore.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Model.DesignedDiffs.xafml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Module.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Model.DesignedDiffs.Localization.ru.xafml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\Galaktika.External.Module.BusinessObjects.ExternalDocument.datasource" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

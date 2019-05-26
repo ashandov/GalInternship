@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel>
+    <Class Name="Galaktika.External.Module.BusinessObjects.ExternalDocumentOpeation">
+      <AppearanceRules>
+        <AppearanceRule Id="[DateEnd] &lt; [DateBegin]_back_coolor" AppearanceItemType="ViewItem" Context="ListView" BackColor="LightGreen" Criteria="[DateEnd] &lt; LocalDateTimeToday()" TargetItems="*" Enabled="True" IsNewNode="True" />
+        <AppearanceRule Id="DateEnd_visibility" AppearanceItemType="ViewItem" Context="DetailView" BackColor="224, 224, 224" Criteria="[DateBegin] Is Null" TargetItems="DateEnd" Enabled="False" IsNewNode="True" />
+      </AppearanceRules>
+    </Class>
+  </BOModel>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="16.2.6.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="16.2.6.0" IsNewNode="True" />
+  </SchemaModules>
+  <Validation>
+    <Rules>
+      <RuleCombinationOfPropertiesIsUnique Id="ОбъектРемонта;DateEnd;DateBegin" TargetType="Galaktika.External.Module.BusinessObjects.ExternalDocument" TargetProperties="ОбъектРемонта;DateEnd;DateBegin" TargetContextIDs="Save" IsNewNode="True" />
+      <RuleRequiredField Id="Свойство «Объект ремонта» должно быть обязательно задано." TargetType="Galaktika.External.Module.BusinessObjects.ExternalDocument" TargetPropertyName="ОбъектРемонта" CustomMessageTemplate="Свойство «Объект ремонта» должно быть обязательно задано." ResultType="Error" TargetContextIDs="Save" IsNewNode="True" />
+    </Rules>
+  </Validation>
+  <Views>
+    <DetailView Id="ExternalDocument_DetailView">
+      <DockPanels>
+        <DockPanel Id="@1a549b6f-5d32-4c6a-9d13-15b069a216ca" ViewID="ExternalDocumentStatus_ListView" IsNewNode="True" />
+        <DockPanel Id="@778d1277-ad88-4e78-9b92-c5710238b8eb" ViewID="ExternalDocumentKind_ListView" IsNewNode="True" />
+      </DockPanels>
+    </DetailView>
+  </Views>
+  <Xafari>
+    <ArmDesign>
+      <Arms>
+        <Arm Id="Внешние документы" IsNewNode="True">
+          <View Id="Статусы внешнего документа" View="ExternalDocumentStatus_ListView" Index="1" IsNewNode="True" />
+          <View Id="Виды внешнего документа" View="ExternalDocumentKind_ListView" Index="2" IsNewNode="True" />
+          <View Id="Внешние документы" View="ExternalDocument_ListView" Index="3" IsNewNode="True" />
+        </Arm>
+      </Arms>
+    </ArmDesign>
+  </Xafari>
+</Application>

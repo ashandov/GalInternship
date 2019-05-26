@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel Id="BOModel">
+    <Class Name="Galaktika.External.Module.BusinessObjects.ExternalDocumentOpeation">
+      <AppearanceRules Id="AppearanceRules">
+        <AppearanceRule Id="[DateEnd] &lt; [DateBegin]_back_coolor" AppearanceItemType="LayoutItem" Context="ListView" BackColor="192, 255, 192" Criteria="[DateEnd] &lt; '@CurrentDate'" TargetItems="*" />
+        <AppearanceRule Id="DateEnd_visibility" AppearanceItemType="ViewItem" Context="DetailView" BackColor="224, 224, 224" Criteria="[DateBegin] Is Null" TargetItems="DateEnd" Enabled="False" />
+      </AppearanceRules>
+    </Class>
+  </BOModel>
+  <Views Id="Views">
+    <ListView Id="ExternalDocumentOpetraions_ListView" AllowEdit="True" MasterDetailMode="ListViewAndDetailView" />
+    <ListView Id="ExternalDocumentMaterials_ListView" AllowEdit="True" MasterDetailMode="ListViewAndDetailView" />
+  </Views>
+  <Xafari Id="Xafari">
+    <Services Id="Services">
+      <BusinessOperations Id="BusinessOperations">
+        <BusinessOperationContext Id="PromAktiv.Module.BusinessOperations.AssetCreateServiceJournalItemOperation" AutoRefreshView="Any" DefaultImplementation="Galaktika.External.BusinessOperations.AssetCreateServiceJournalItemOperationServiceExternal" />
+      </BusinessOperations>
+    </Services>
+    <BusinessOperations Id="BusinessOperations">
+      <BusinessOperationContext Id="PromAktiv.Module.BusinessOperations.AssetCreateServiceJournalItemOperation" AutoRefreshView="Any" DefaultImplementation="Galaktika.External.BusinessOperations.AssetCreateServiceJournalItemOperationServiceExternal" />
+    </BusinessOperations>
+  </Xafari>
+</Application>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel>
+    <Class Name="Galaktika.External.Module.BusinessObjects.ExternalDocument" Caption="Внешний документ">
+      <OwnMembers>
+        <Member Name="Asset" Caption="Объект ремонта" />
+        <Member Name="DateBegin" Caption="Дата начала" />
+        <Member Name="DateEnd" Caption="Дата окончания" />
+        <Member Name="DocumentKind" Caption="Внешний документ" />
+        <Member Name="ExternalDocumentStatus" Caption="Стутс внешнего документа" />
+        <Member Name="Operations" Caption="Операции" />
+        <Member Name="Sum" Caption="Сумма" />
+      </OwnMembers>
+    </Class>
+    <Class Name="Galaktika.External.Module.BusinessObjects.ExternalDocumentKind" Caption="Справочник «Вид внешнего документа»">
+      <OwnMembers>
+        <Member Name="Children" Caption="Нижестоящие" />
+        <Member Name="Parent" Caption="Вышестоящий" />
+      </OwnMembers>
+    </Class>
+    <Class Name="Galaktika.External.Module.BusinessObjects.ExternalDocumentMaterial" Caption="Материал внешнего документа">
+      <OwnMembers>
+        <Member Name="Material" Caption="Материал" />
+        <Member Name="Number" Caption="Номер" />
+        <Member Name="Operation" Caption="Операция" />
+        <Member Name="Price" Caption="Цена" />
+        <Member Name="Qty" Caption="Количесвто" />
+        <Member Name="Sum" Caption="Сумма" />
+      </OwnMembers>
+    </Class>
+    <Class Name="Galaktika.External.Module.BusinessObjects.ExternalDocumentOperation" Caption="Операция внешнего документа">
+      <OwnMembers>
+        <Member Name="DateBegin" Caption="Дата начала" />
+        <Member Name="DateEnd" Caption="Дата окончания" />
+        <Member Name="Doc" Caption="Внешний документ" />
+        <Member Name="Duration" Caption="Длительность" />
+        <Member Name="Materials" Caption="Материалы" />
+        <Member Name="Number" Caption="Номер" />
+        <Member Name="Qty" Caption="Количество" />
+        <Member Name="Sum" Caption="Сумма" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+</Application>

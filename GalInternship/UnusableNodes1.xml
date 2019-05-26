@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="Статусы_ListView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="General">
+          <LayoutGroup Id="СвязиФайлы_Group">
+            <LayoutItem Id="СвязиФайлы" ViewItem="СвязиФайлы" />
+          </LayoutGroup>
+          <LayoutGroup Id="DocumentRemarks.Remarks_Group">
+            <LayoutItem Id="DocumentRemarks.Remarks" ViewItem="DocumentRemarks.Remarks" />
+          </LayoutGroup>
+          <LayoutGroup Id="Operations_Group">
+            <LayoutItem Id="Operations" ViewItem="Operations" />
+          </LayoutGroup>
+          <LayoutItem Id="DateEnd" ViewItem="DateEnd" />
+          <LayoutItem Id="DateBegin" ViewItem="DateBegin" />
+          <LayoutItem Id="DocumentKind" ViewItem="DocumentKind" />
+          <LayoutItem Id="ExternalDocumentStatus" ViewItem="ExternalDocumentStatus" />
+          <LayoutItem Id="ОбъектРемонта" ViewItem="ОбъектРемонта" />
+          <LayoutItem Id="ДатаДокумента" ViewItem="ДатаДокумента" />
+          <LayoutItem Id="Sum" ViewItem="Sum" />
+          <LayoutItem Id="Номер" ViewItem="Номер" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ExternalDocumentФильтр_ListView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="General">
+          <LayoutGroup Id="СвязиФайлы_Group">
+            <LayoutItem Id="СвязиФайлы" ViewItem="СвязиФайлы" />
+          </LayoutGroup>
+          <LayoutGroup Id="DocumentRemarks.Remarks_Group">
+            <LayoutItem Id="DocumentRemarks.Remarks" ViewItem="DocumentRemarks.Remarks" />
+          </LayoutGroup>
+          <LayoutGroup Id="Operations_Group">
+            <LayoutItem Id="Operations" ViewItem="Operations" />
+          </LayoutGroup>
+          <LayoutItem Id="DateEnd" ViewItem="DateEnd" />
+          <LayoutItem Id="DateBegin" ViewItem="DateBegin" />
+          <LayoutItem Id="DocumentKind" ViewItem="DocumentKind" />
+          <LayoutItem Id="ExternalDocumentStatus" ViewItem="ExternalDocumentStatus" />
+          <LayoutItem Id="ДатаДокумента" ViewItem="ДатаДокумента" />
+          <LayoutItem Id="Sum" ViewItem="Sum" />
+          <LayoutItem Id="Номер" ViewItem="Номер" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>
